@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+   background: #f5f3f5;
+   /* font-family: 'Sacramento', cursive; */
+}
+
+:root {
+    --orange: #F80;
+    --grey: #555;
+    --white: #f5f3f5;
+}
+
+header {
+    height: 100vh;
+}
+
+.logo {
+    color: #F80;
+    text-transform: capitalize;
+    font-family: 'Tangerine', cursive;
+    font-size: 30px;
+    margin: 10px 20px;
+}
+
+.nav-links li  {
+    list-style-type: none;
+    margin: 10px 20px;
+    padding: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: var(--grey);
+}
+
+.nav-links {
+    display: flex;
+}
+
+.button a {
+    font-weight: bold;
+    text-decoration: none;
+    margin:  20px;
+    text-transform: capitalize;
+    padding: 5px 10px;
+    border: 3px solid var(--orange);
+    border-radius: 60px;
+    background: var(--orange);
+    color: var(--white);
+    transition: background 1.2s ease, color 1.2s ease;
+}
+
+.button a:hover {
+    background: var(--white);
+    color: var(--orange);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+/* banner */
+
+.banner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.banner-text h1 {
+    font-size: 40px;
+    color: var(--orange);
+    font-weight: bold;
+}
+
+.banner-text p {
+    font-size: 20px;
+    color: var(--grey);
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.banner :nth-child(2) {
+    order: -1;
+}
+
+.banner-img {
+    width: 50%;
+    transform: scale(1.2);
+    z-index: -1;
+}
+
+/* title */
+.title h1 {
+    text-transform: uppercase;
+    color: var(--orange);
+    margin: 10px 20px;
+    font-size: 40px;
+}
+
+.underline {
+    border: 1.5px solid var(--grey);
+    background: var(--grey);
+    width: 20px;
+    margin-left: 28px;
+    margin-top: -15px;
+    transition: width 1.2s ease, opacity 1s ease;
+    opacity: 0;
+}
+
+.title:hover .underline {
+    width: 120px;
+    opacity: 1;
+}
+
+/* end of title */
+
+.why {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.why-image {
+    width: 600px;
+}
+
+.why-text {
+    width: 60vw;
+}
+
+.why-text h3 {
+    font-size: 35px;
+}
+
+.why-text p {
+    font-size: 25px;
+}
+
+.custom .why-text {
+    margin-left: 50px;
+}
+
+.custom :nth-child(2){
+    order: -1;
+}
+
+#our-services {
+    margin: 20px 10px;
+}
+.cards-center {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: -10px;
+}
+
+.card {
+    background: #f5f3f5;
+    border: 3px solid purple;
+    border-radius: 20px;
+    margin: 30px auto;
+    transition: transform 1.2s ease;
+    padding: 25px;
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.card:hover {
+    transform: translateY(-15px);
+}
+
+.card img {
+    width: 80px;
+}
+
+.custom img {
+    margin-top: 10px;
+}
+
+#our-services {
+    height: 60vh;
+}
+
+video {
+    width: 500px;
+    height: 500px;
+    margin: 30px 0;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mobile-center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mobile-center :nth-child(2) {
+    order: -1;
+}
+
+.mobile-img .mobile-text {
+    flex: 0 0 calc(50% - 2rem);
+}
+
+.mobile-text p {
+    width: 40vw;
+    font-size: 25px;
+}
+
+.mobile-text h1 {
+    font-size: 35px;
+    color: var(--orange);
+}
+
+#mobile-download {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+#book-session {
+    /* text-align: center; */
+    align-items: center;
+}
+
+
+
+.session-text {
+    background: linear-gradient(rgb(118, 106, 245),
+    rgb(148, 95, 243),
+    rgb(172, 87, 242));
+    width: 70vw;
+    padding: 40px;
+    border-radius: 20px;
+    margin: 250px auto;
+}
+
+.session-text p {
+    width: 40vw;
+    color: var(--white);
+    font-size: 25px;
+}
+
+.session-text h1 {
+    color: var(--white);
+    font-size: 35px;
+}
+
+.session-btn {
+    border: 3px solid var(--orange);
+    background: var(--orange);
+    display: inline-block;
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.session-btn a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 20px;
+    
+}
